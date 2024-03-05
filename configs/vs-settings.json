@@ -1,0 +1,55 @@
+{
+  // settings file
+  "workbench.settings.editor": "json",
+
+  // theme
+  "workbench.colorTheme": "Aura Dark (Soft Text)",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+
+  // terminal
+  "terminal.external.osxExec": "iTerm.app",
+
+  // editor
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Geist Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  // files
+  "files.trimTrailingWhitespace": true,
+
+  // apc configs
+  "apc.electron": {
+      "frame": false,
+  },
+  "apc.font.family": "Geist Mono",
+  "apc.monospace.font.family": "Geist Mono",
+  "apc.activityBar": {
+      "position": "bottom",
+      "size": 35, // Height (when top/bottom) or width (in default position)
+      "itemSize": 35, // Size of items within the bar (default: size)
+      "itemMargin": 2 // Margin between two items (default: 3)
+  },
+  "apc.statusBar": {
+      "position": "editor-bottom",
+      "height": 35,
+      "fontSize": 12
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+
+}
