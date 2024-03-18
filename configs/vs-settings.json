@@ -37,6 +37,7 @@
       "height": 35,
       "fontSize": 12
   },
+  "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[jsonc]": {
