@@ -43,6 +43,7 @@ setup_brew() {
     echo "setting up homebrew ..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     restart_shell
+  fi
 }
 
 setup_node() {
@@ -52,6 +53,7 @@ setup_node() {
   else
     echo "setting up nvm ..."
     brew install nvm
+  fi
 
   if exists node
   then
@@ -59,6 +61,7 @@ setup_node() {
   else
     echo "setting up node ..."
     nvm install --lts
+  fi
 }
 
 setup_shell() {
@@ -78,16 +81,19 @@ setup_python() {
     echo "pipx already exists ..."
   else
     brew install pipx
+  fi
 
   if exists python
   then
     echo "python already exists ..."
   else
     brew install python
+  fi
 
   if exists python
   then
     echo "overriding python cli with python3"
+  fi
 
   echo "alias python=python3" >> ~/.zshrc
 
@@ -96,6 +102,7 @@ setup_python() {
     echo "poetry already exists ..."
   else
     pipx install poetry
+  fi
 }
 
 setup_sqlite() {
@@ -105,6 +112,7 @@ setup_sqlite() {
   else
     echo "setting up sqlite ..."
     brew install sqlite
+  fi
 }
 
 setup_font() {
