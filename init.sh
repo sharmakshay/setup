@@ -70,7 +70,8 @@ setup_shell() {
   npm install --global pure-prompt
   echo 'autoload -U promptinit; promptinit \n prompt pure' >> .zshrc
   brew install zsh-syntax-highlighting
-  echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrcrestart_shell
+  echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+  restart_shell
 }
 
 setup_python() {
@@ -127,7 +128,7 @@ setup_vscode() {
   brew install --cask visual-studio-code
   restart_shell
   echo 'export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >> .zshrc
-  cp setup/configs/vs-settings.json ~/Library/Application Support/Code/User/settings.json
+  cp setup/configs/vs-settings.json ~/Library/Application\ Support/Code/User/settings.json
   restart_shell
   code --install-extension drcika.apc-extension
   code --install-extension daltonMenezes.aura-theme
