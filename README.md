@@ -1,6 +1,6 @@
 # setup macos for dev
-- clone repo in user home dir
-- run `sh setup/init.sh` from home dir to setup machine with the following:
+1. clone repo in user home dir
+2. run `sh setup/init.sh` from home dir to setup machine with the following:
     * brew
     *  node _(nvm, node, npm -- LTS version)_
     *  zsh _(pure theme + syntax highlighting)_
